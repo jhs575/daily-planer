@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .btn-success {
+            background: #00b7ff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+            font-weight: 500;
+            transition: all ease 200ms;
+        }
+    </style>
+</head>
+
+<body class=" p-6 font-sans w-6/12 mx-auto">
+
+    <!-- Date and Day Field -->
+    <div class="flex justify-between align-center mb-4">
+        <p class="border-b-[1px] border-black mb-5 text-xl ">Date:
+            <input type="date" class=" p-2 h-10">
+        </p>
+        <p class="border-b-[1px] border-black mb-5 text-xl ">Day:
+            <input type="text" class=" p-2 h-10">
+        </p>
+    </div>
+
+    <!-- Motivational Quote -->
+    <div class="text-center mb-4">
+        <p class="text-xl font-semibold">"If you're going through hell, keep going."</p>
+        <h3 class="text-lg font-bold mt-2"> Winston Churchill</h3>
+    </div>
+
+    <!-- 2 Column Section -->
+    <div class="mb-6">
+        <div class="flex flex-row justify-center gap-6">
+            <div class="p-4 rounded-md">
+                <h4 class="text-center font-bold text-lg mb-2">
+                    Productivity
+                    <input type="" class="border-b-2 w-10 ml-5">
+                    /10
+                </h4>
+            </div>
+            <div class="p-4 rounded-md">
+                <h4 class="text-center font-bold text-lg mb-2">
+                    Mood
+                    <input type="" class="border-b-2 w-10 ml-5">
+                    /10
+                </h4>
+            </div>
+        </div>
+        <h3 class="text-lg font-bold mt-2 text-center mt-20 mb-3">Today's Agenda</h3>
+        <ul class="grid grid-cols-2 mx-auto gap-6 justify-center">
+            <li class=" flex gap-3 border-b-2">
+                <input type="checkbox" id="morningRun">
+                <input type="text" placeholder="Morning Run">
+            </li>
+            <li class=" flex gap-3 border-b-2">
+                <input type="checkbox" id="morningRun">
+                <input type="text" placeholder="Morning Run">
+            </li>
+            <li class=" flex gap-3 border-b-2">
+                <input type="checkbox" id="morningRun">
+                <input type="text" placeholder="Morning Run">
+            </li>
+            <li class=" flex gap-3 border-b-2">
+                <input type="checkbox" id="morningRun">
+                <input type="text" placeholder="Morning Run">
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Gratitude Section -->
+    <h5 class="text-lg font-bold mt-2 text-center mt-20 text-center">Today I'm thankful for...</h5>
+    <ol class="list-decimal pl-6 mb-4">
+        <li class="mt-2"><input type="text" class="border-b-2 p-2 w-full"></li>
+        <li class="mt-2"><input type="text" class="border-b-2 p-2 mt-4 w-full"></li>
+        <li class="mt-2"><input type="text" class="border-b-2 p-2 mt-4 w-full"></li>
+    </ol>
+
+    <!-- Lesson Section -->
+    <h4 class="text-lg font-bold mt-2 text-center mt-20 text-center mb-3">Today's Lesson</h4>
+    <textarea class="border border-gray-300 p-2 rounded-md w-full h-32"></textarea>
+    <div class="flex mt-4 items-center">
+        <h4 class="text-lg font-semibold mb-2">One thing I did that sucked: </h4>
+        <input type="text" class="border border-gray-300 p-2 rounded-md grow">
+    </div>
+
+    <!-- Submit section -->
+    <button class="btn-success hover:bg-green-500 hover:text-xl">Save</button>
+
+</body>
